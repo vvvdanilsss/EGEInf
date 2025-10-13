@@ -7,4 +7,4 @@ while n > 0:
 for i in s[::-1]:
     if i > 9:
         counter += 1
-print(counter)
+pr
