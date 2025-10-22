@@ -1,4 +1,4 @@
-a = [int(i) for i in open('17-339.txt')]
+a = [int(i) for i in open('txt/17-339.txt')]
 mina = min(i for i in a if (i > 0) and (i % 19 == 0))
 counter = 0
 maxznach = -1000000

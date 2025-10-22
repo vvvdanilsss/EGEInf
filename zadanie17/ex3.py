@@ -6,7 +6,7 @@ def sum3(n):
     return s
 
 
-a = [int(i) for i in open('3.txt')]
+a = [int(i) for i in open('txt/3.txt')]
 max11 = sum3(max(i for i in a if i % 11 == 0))
 counter = 0
 minp = 100000

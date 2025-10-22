@@ -1,4 +1,4 @@
-a = [int(i) for i in open('17-354.txt')]
+a = [int(i) for i in open('txt/17-354.txt')]
 min3 = min(i for i in a if abs(i) % 10 == 3) ** 2
 counter = 0
 max2 = -1
