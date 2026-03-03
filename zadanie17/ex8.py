@@ -1,4 +1,4 @@
-a = [int(i) for i in open('ex8.txt')]
+a = [int(i) for i in open('txt/ex8.txt')]
 min2 = min(i for i in a if abs(i) % 10 == 1) ** 2
 res = []
 for i in range(len(a) - 1):
