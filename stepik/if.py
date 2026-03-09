@@ -1,6 +1,9 @@
-lst = list(map(str, input().lower().split()))
-d = {i: lst.count(i) for i in lst}
-if 'и' in d:
-    print(d['и'])
-else:
-    print(0)
+lst_in = ["Пушкин: Сказака о рыбаке и рыбке",
+          "Есенин: Письмо к женщине",
+          "Тургенев: Муму",
+          "Пушкин: Евгений Онегин",
+          "Есенин: Русь"]
+
+lst = [lst.split(': ') for lst in lst_in]
+d = {a[0] : {i[1] for i in lst if i[0] == a[0]} for a in lst}
+print(d)
